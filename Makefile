@@ -1,24 +1,35 @@
 SHELL = bash
 
 .PHONY: deps
-deps: bin/tcpser
+deps: bin/tcpser /usr/local/bin/x64sc
+# ------------------------------------
+#  Dependencies
+# ------------------------------------
+bin/tcpser: vendor/tcpser/tcpser bin
+	cp $< $@
 
+/usr/local/bin/x64sc:
+	brew install vice
+
+# ------------------------------------
+#  Directories
+# ------------------------------------
 vendor:
 	-mkdir vendor
 
 vendor/tcpser: vendor
 	git clone https://github.com/FozzTexx/tcpser.git $</tcpser
 
-vendor/tcpser/tcpser: vendor/tcpser
-	cd $< && make
-
 bin:
 	-mkdir bin
 
-bin/tcpser: vendor/tcpser/tcpser bin
-	cp $< $@
+vendor/tcpser/tcpser: vendor/tcpser
+	cd $< && make
 
 
+# ------------------------------------
+#  Utils
+# ------------------------------------
 .PHONY: clean
 clean:
 	-rm -rf vendor
