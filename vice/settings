@@ -2,12 +2,15 @@
 SaveResourcesOnExit=1
 Window0Height=621
 Window0Width=720
-Window0Xpos=1936
-Window0Ypos=143
+Window0Xpos=1796
+Window0Ypos=146
+WarpMode=1
 SoundDeviceName="coreaudio"
 VICIIVideoCache=0
 SidEngine=1
 SidModel=1
 ETHERNETCARTBase=56832
+Acia1Dev=2
+Acia1Enable=1
 Acia1Base=56832
 
