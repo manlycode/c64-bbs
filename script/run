@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-x64sc -config vice/settings
+x64sc \
+  -config vice/settings \
+  -autostart disks/ccgms\ ultimate.d64
