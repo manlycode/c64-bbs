@@ -1,3 +1,3 @@
 tcpser: script/connect
-vice: script/run
+vice: script/c64
 

@@ -1,5 +1,10 @@
 SHELL = bash
 
+.PHONY: run
+run: deps
+	foreman start
+	killall tcpser
+
 .PHONY: deps
 deps: bin/tcpser /usr/local/bin/x64sc
 # ------------------------------------
