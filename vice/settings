@@ -1,0 +1,12 @@
+[C64SC]
+Window0Height=621
+Window0Width=720
+Window0Xpos=1936
+Window0Ypos=227
+SoundDeviceName="coreaudio"
+VICIIVideoCache=0
+SidEngine=1
+SidModel=1
+ETHERNETCARTBase=56832
+Acia1Base=56832
+
